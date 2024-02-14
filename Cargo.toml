@@ -1,0 +1,30 @@
+[package]
+name = "row2pgcsv"
+version = "0.1.0"
+edition = "2021"
+description = "Simple Serializer for PG CSV"
+license = "Apache-2.0"
+documentation = "https://docs.rs/crate/row2pgcsv"
+repository = "https://github.com/takanoriyanagitani/rs-row2pgcsv"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[profile.release-wasi]
+inherits = "release"
+lto = true
+strip = true
+opt-level = 's'
+codegen-units = 23
+
+[dependencies.serde]
+version = "1.0"
+default-features = false
+features = [
+    "std",
+    "derive",
+]
+
+[features]
+default = [
+]
