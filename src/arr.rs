@@ -352,6 +352,7 @@ where
     }
 }
 
+/// Writes a val to a writer.
 pub fn to_writer<W, T>(wtr: W, val: &T) -> Result<(), SerError>
 where
     T: Serialize,
