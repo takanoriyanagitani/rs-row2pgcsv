@@ -353,6 +353,10 @@ where
 }
 
 /// Writes a val to a writer.
+///
+/// ## Arguments
+/// - wtr: A target [`io::Write`].
+/// - val: A value to be serialized([`Serialize`]).
 pub fn to_writer<W, T>(wtr: W, val: &T) -> Result<(), SerError>
 where
     T: Serialize,
