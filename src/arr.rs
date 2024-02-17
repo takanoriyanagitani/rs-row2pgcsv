@@ -1,3 +1,5 @@
+//! Functions to serialize an array to a string for PostgreSQL COPY Command
+
 use core::fmt;
 use core::fmt::Display;
 
