@@ -1,7 +1,7 @@
 //! Functions to serialize an array to a raw string* for PostgreSQL COPY Command.
 //!
 //! Use external crates(e.g, csv) to serialize the serialized string to a csv string.
-//! 
+//!
 //! \* This crate does NOT care special characters: e.g, ``/[,'"]/``
 
 use core::fmt;
